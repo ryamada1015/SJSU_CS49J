@@ -25,16 +25,23 @@ public class MyFile {
 		
 		while(reader.hasNext()) {
 			String input = reader.next();
-			if(!isInt(input)) continue;
-			int num = Integer.parseInt(input);
+			int num = 0;
+			for(String str:input.split(" ")) {
+				if(isInt(str)) {
+					num = Integer.parseInt(str);
+					break;
+				}
+			}
 			if(num <= 1) continue;
 			int i;
 			for(i = 2; i < num; i++) {
 				if(num%i == 0)
 					break;
 			}
-			if(i == num)
-				outputFile.println(num);
+			if(i == num) {
+				System.out.println(num);
+				//outputFile.println(num);
+			}
 			}
 				
 		reader.close();
