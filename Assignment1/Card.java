@@ -3,7 +3,7 @@ package edu.sjsu.assignment1;
 public class Card {
 
 	public static void main(String[] args) {
-		Card card = new Card("SK");
+		Card card = new Card("0H");
 		String str = card.getDescription();
 		System.out.println(str);
 	}
@@ -21,6 +21,8 @@ public class Card {
 		
 		if(notation.length() == 2) {
 			if(Character.isDigit(ch)) {
+				if(Character.getNumericValue(ch) < 2 || Character.getNumericValue(ch) > 9)
+					return "Unknown";
 				switch(ch) {
 				case '2': number = "Two";
 				break;
