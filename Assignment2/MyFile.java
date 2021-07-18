@@ -39,8 +39,7 @@ public class MyFile {
 					break;
 			}
 			if(i == num) {
-				System.out.println(num);
-				//outputFile.println(num);
+				outputFile.println(num);
 			}
 			}
 				
