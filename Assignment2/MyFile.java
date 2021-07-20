@@ -43,18 +43,14 @@ public class MyFile {
 //			reader.close();
 //		}
 			
-		reader.useDelimiter(",");
+		reader.useDelimiter("[,\n]");
 		
 		while(reader.hasNext()) {
 			String input = reader.next();
 			int num = 0;
-			for(String str:input.split(" ")) {
-				if(isInt(str)) {
-					num = Integer.parseInt(str);
-					break;
-				}
-			}
-			if(num <= 1) continue;
+			if(isInt(input))
+					num = Integer.parseInt(input);
+			else if(num <= 1) continue;
 			int i;
 			for(i = 2; i < num; i++) {
 				if(num%i == 0)
@@ -63,7 +59,7 @@ public class MyFile {
 			if(i == num) {
 				outputFile.println(num);
 			}
-			}
+		}
 				
 		outputFile.close();
 		reader.close();
