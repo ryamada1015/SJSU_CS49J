@@ -20,6 +20,28 @@ public class MyFile {
 		PrintWriter outputFile = new PrintWriter(file2);
 		
 		Scanner reader = new Scanner(inputFile);
+		
+//		while(in.hasNextLine()) {
+//			String str = in.nextLine();
+//			Scanner reader = new Scanner(str);
+//			reader.useDelimiter(",");
+//			while(reader.hasNext()) {
+//				String token = reader.next();
+//				int i;
+//				if(isInt(token) && Integer.parseInt(token) >= 2) {
+//					int num = Integer.parseInt(token);
+//					for(i = 2; i <= Math.sqrt(num); i++) {
+//						if(num%i == 0)
+//							break;
+//					}
+//					if(i > Math.sqrt(num)) {
+//						System.out.println(num);
+//						outputFile.println(num);
+//					}
+//				}
+//			}
+//			reader.close();
+//		}
 			
 		reader.useDelimiter(",");
 		
@@ -43,8 +65,8 @@ public class MyFile {
 			}
 			}
 				
-		reader.close();
 		outputFile.close();
+		reader.close();
 		
 		
 	}
