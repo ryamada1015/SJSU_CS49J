@@ -26,12 +26,12 @@ public class MyCollections {
 		employees.add("Keith");
 		employees.add("Nasu");
 		employees.add("Naomi");
-		employees.add("Apryl");
+//		employees.add("Apryl");
 //		employees.add("Lucy");
 //		employees.add("Jonny");
 //		employees.add("Chris");
 //		employees.add("Mercedez");
-		downsize(employees, 3);
+//		downsize(employees, 3);
 		
 //		isBalanced("([])");
 //		isBalanced("([)]");
@@ -90,6 +90,7 @@ public class MyCollections {
 			else if(chars[i] == ']' && s.peek() == '[') {
 				s.pop();
 			}
+			else return false;
 		}
 		if(s.isEmpty())
 			return true;
