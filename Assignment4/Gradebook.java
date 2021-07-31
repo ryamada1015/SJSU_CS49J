@@ -116,7 +116,7 @@ public class Gradebook {
 	public void printGrade(Comparator<Student> comparator) {
 		if(comparator == null) {
 			for(Map.Entry<Student, Character> el : map.entrySet()) {
-				System.out.println(el.getKey().toString());
+				System.out.println(el.getKey().toString() + el.getValue());
 			}
 		}
 	}
