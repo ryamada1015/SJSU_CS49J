@@ -15,7 +15,7 @@ public class Gradebook {
 		Gradebook grades = new Gradebook();
 		grades.addStudent(0, "Keith", 'B');
 		grades.addStudent(1, "May");
-		grades.addStudent(2, "Lily", 'A');
+		grades.addStudent(2, "Lily", 'i');
 		grades.addStudent(0, "Keith");
 		grades.addStudent(3, "Sammy", 'A');
 		grades.addStudent(4, "Jessie");
